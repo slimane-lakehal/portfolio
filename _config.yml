@@ -1,8 +1,8 @@
 # Site settings
 title: "Slimane — Data Analyst & Analytics Engineer"
 description: "Analytics Engineer, Instructor at Le Wagon, SaaS Founder. Building data pipelines, AI products, and teaching data."
-url: "https://slimane-lakehal.github.io/portfolio/"
-baseurl: "" # Leave empty if deploying to username.github.io
+url: "https://slimane-lakehal.github.io"
+baseurl: "/portfolio"  # Your repo name
 
 # Author / Personal Info
 author:
