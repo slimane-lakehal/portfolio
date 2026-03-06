@@ -1,7 +1,7 @@
 # Skills grouped by category
 - category: "Analytics & Transform"
   items:
-    - "dbt Core"
+    - "DBT"
     - "BigQuery"
     - "DuckDB"
     - "SQL"
@@ -13,7 +13,7 @@
     - "FastAPI"
     - "Prefect"
     - "Docker"
-    - "PostgreSQL"
+    - "Supabase"
 
 - category: "Web & Viz"
   items:

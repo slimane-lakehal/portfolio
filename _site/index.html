@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slimane — Data Analyst & Analytics Engineer</title>
+  <meta name="description" content="Analytics Engineer, Instructor at Le Wagon, SaaS Founder. Building data pipelines, AI products, and teaching data."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+  <a href="#hero" class="nav-logo">slimane<span>.dev</span></a>
+  <ul class="nav-links">
+    
+    <li><a href="#projects">Projects</a></li>
+    
+    <li><a href="#about">About</a></li>
+    
+    <li><a href="#products">Products</a></li>
+    
+    <li><a href="#contact">Contact</a></li>
+    
+  </ul>
+  <div class="nav-status">
+    
+    <div class="status-dot"></div>
+    Available for freelance
+    
+  </div>
+</nav>
+
+
+<div id="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Analytics Engineer & SaaS Founder</div>
+    <h1 class="hero-name">Sli<em>mane</em></h1>
+    <p class="hero-title">
+      <span class="highlight">dbt · BigQuery · Python</span>
+      &nbsp;/&nbsp; Le Wagon Instructor
+    </p>
+    <p class="hero-desc">I build data pipelines that actually work, teach analytics engineering at Le Wagon, and ship AI products that solve real problems. Based in France, working globally.</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="terminal-card">
+      <div class="terminal-bar">
+        <div class="t-dot t-red"></div>
+        <div class="t-dot t-amber"></div>
+        <div class="t-dot t-green"></div>
+        <span class="terminal-title">~/portfolio — zsh</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">❯ </span><span class="t-cmd">cat profile.json</span></div>
+        <div class="t-out">{</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-val">"Slimane"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"Analytics Engineer"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"stack"</span>: [<span class="t-val">"dbt"</span>, <span class="t-val">"BigQuery"</span>, <span class="t-val">"Python"</span>],</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"instructor"</span>: <span class="t-val">"Le Wagon"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"products"</span>: [<span class="t-val">"AuditGuard AI"</span>, <span class="t-val">"LIFO.AI"</span>],</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-val">"France 🇫🇷"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"available"</span>: <span style="color:#22c55e">true</span></div>
+        <div class="t-out">}</div>
+        <br/>
+        <div><span class="t-prompt">❯ </span><span class="t-cmd">dbt run --select marts.*</span></div>
+        <div class="t-out t-comment">Running 4 models...</div>
+        <div class="t-out" style="color:#22c55e">✓ Completed successfully in 1.2s</div>
+        <br/>
+        <div><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    
+    <div class="stat-item reveal">
+      <span class="stat-number">3+</span>
+      <span class="stat-label">Years in data</span>
+    </div>
+    
+    <div class="stat-item reveal">
+      <span class="stat-number">100+</span>
+      <span class="stat-label">Students taught</span>
+    </div>
+    
+    <div class="stat-item reveal">
+      <span class="stat-number">2</span>
+      <span class="stat-label">SaaS products</span>
+    </div>
+    
+    <div class="stat-item reveal">
+      <span class="stat-number">∞</span>
+      <span class="stat-label">Lines of SQL and python written (and counting)</span>
+    </div>
+    
+  </div>
+</div>
+
+
+<section id="projects">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Selected work</div>
+      <h2 class="section-title">Portfolio <em>Projects</em></h2>
+    </div>
+    <div class="section-count">03</div>
+  </div>
+
+  <div class="projects-grid">
+    
+    <a href="https://github.com/slimane-lakehal/dbt-analytics-showcase" class="project-card featured reveal" target="_blank">
+      
+      <div class="featured-grid">
+        <div>
+      
+          <div class="project-num">01 — Featured</div>
+          <h3 class="project-name">dbt Analytics Showcase</h3>
+          <p class="project-desc">Production-grade analytics engineering project on the Olist Brazilian E-Commerce dataset. Full Medallion architecture: staging → intermediate → marts, with 25+ tests and automated CI.</p>
+          <div class="project-stack">
+            
+            <span class="tag cyan">dbt Core</span>
+            
+            <span class="tag cyan">DuckDB</span>
+            
+            <span class="tag">Python</span>
+            
+            <span class="tag">GitHub Actions</span>
+            
+            <span class="tag amber">100k+ rows</span>
+            
+          </div>
+          <span class="project-link">View on GitHub →</span>
+      
+        </div>
+        <div class="featured-metrics">
+          
+          <div class="metric-box">
+            <span class="metric-val">5</span>
+            <span class="metric-label">dbt models</span>
+          </div>
+          
+          <div class="metric-box">
+            <span class="metric-val">25+</span>
+            <span class="metric-label">Tests</span>
+          </div>
+          
+          <div class="metric-box">
+            <span class="metric-val">3</span>
+            <span class="metric-label">Mart layers</span>
+          </div>
+          
+          <div class="metric-box">
+            <span class="metric-val">CI</span>
+            <span class="metric-label">Auto-tested</span>
+          </div>
+          
+        </div>
+      </div>
+      
+    </a>
+    
+    <a href="https://github.com/slimane-lakehal/modern-data-pipeline" class="project-card reveal" target="_blank">
+      
+          <div class="project-num">02</div>
+          <h3 class="project-name">Modern Data Pipeline</h3>
+          <p class="project-desc">End-to-end ELT tracking GitHub trending repos. GitHub API → DuckDB → dbt → Evidence.dev dashboard. Orchestrated by Prefect with a daily scheduled run.</p>
+          <div class="project-stack">
+            
+            <span class="tag">DuckDB</span>
+            
+            <span class="tag cyan">Prefect</span>
+            
+            <span class="tag cyan">Evidence.dev</span>
+            
+            <span class="tag">dbt</span>
+            
+            <span class="tag">Python</span>
+            
+          </div>
+          <span class="project-link">View on GitHub →</span>
+      
+    </a>
+    
+    <a href="https://linkedin.com/in/lakehal-slimane" class="project-card reveal" target="_blank">
+      
+          <div class="project-num">03</div>
+          <h3 class="project-name">Coming Soon</h3>
+          <p class="project-desc">Third portfolio project in progress — stay tuned. Building in public on LinkedIn.</p>
+          <div class="project-stack">
+            
+            <span class="tag">In progress</span>
+            
+            <span class="tag amber">Building in public</span>
+            
+          </div>
+          <span class="project-link">Follow on LinkedIn →</span>
+      
+    </a>
+    
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <div class="section-eyebrow">Who I am</div>
+      <h2 class="section-title" style="margin-bottom:32px">About <em>me</em></h2>
+
+      <p class="about-bio">I'm a <strong>data analyst and analytics engineer</strong> based in France, with a background spanning pharmacy, retail management, and data — which gives me a <span class="accent">uniquely practical</span> lens on business problems.</p>
+      <p class="about-bio">I currently <strong>teach SQL, Python, BigQuery, and Power BI</strong> at Le Wagon, and work as a freelance data consultant. I'm also building two AI-powered SaaS products on the side.</p>
+
+      <div class="skills-section">
+        
+        <div class="skills-group">
+          <div class="skills-label">Analytics & Transform</div>
+          <div class="skills-pills">
+            
+            <span class="pill">DBT</span>
+            
+            <span class="pill">BigQuery</span>
+            
+            <span class="pill">DuckDB</span>
+            
+            <span class="pill">SQL</span>
+            
+            <span class="pill">Power BI</span>
+            
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <div class="skills-label">Engineering & Infra</div>
+          <div class="skills-pills">
+            
+            <span class="pill">Python</span>
+            
+            <span class="pill">FastAPI</span>
+            
+            <span class="pill">Prefect</span>
+            
+            <span class="pill">Docker</span>
+            
+            <span class="pill">Supabase</span>
+            
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <div class="skills-label">Web & Viz</div>
+          <div class="skills-pills">
+            
+            <span class="pill">Next.js</span>
+            
+            <span class="pill">Evidence.dev</span>
+            
+            <span class="pill">Streamlit</span>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="section-eyebrow" style="margin-bottom:32px">Experience</div>
+      <div class="timeline">
+        
+        <div class="tl-item">
+          <div class="tl-year">2024 — Present</div>
+          <div class="tl-role">Data Instructor</div>
+          <div class="tl-org">Le Wagon · Bootcamp</div>
+          <div class="tl-desc">Teaching SQL, Python, BigQuery, and Power BI to career-switchers. Delivered workshops on web scraping, dbt, and data pipelines.</div>
+        </div>
+        
+        <div class="tl-item">
+          <div class="tl-year">2025 - Present</div>
+          <div class="tl-role">Solo Founder</div>
+          <div class="tl-org">LIFO.AI</div>
+          <div class="tl-desc">Building a food waste reduction tool for retail, powered by AI-driven demand forecasting and inventory optimization.</div>
+        </div>
+        
+        <div class="tl-item">
+          <div class="tl-year">2026</div>
+          <div class="tl-role">Solo Founder</div>
+          <div class="tl-org">AuditGuard AI · LIFO.AI</div>
+          <div class="tl-desc">Building a compliance automation platform for SMBs, starting with GDPR audit automation.</div>
+        </div>
+        
+        <div class="tl-item">
+          <div class="tl-year">2024 — Present</div>
+          <div class="tl-role">Freelance Data Analyst</div>
+          <div class="tl-org">Auto-entrepreneur</div>
+          <div class="tl-desc">Freelance analytics and data engineering consulting. End-to-end pipelines, dashboards, and data strategy.</div>
+        </div>
+        
+        <div class="tl-item">
+          <div class="tl-year">Before data</div>
+          <div class="tl-role">Fast Food Manager & Pharmacist</div>
+          <div class="tl-org">Multi-year experience</div>
+          <div class="tl-desc">Background in pharmacy (Algeria) and multi-year fast food management — gives me an unusually strong business intuition.</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="products">
+  <div class="section-header reveal" style="max-width:1200px;margin:0 auto;padding:0 48px;margin-bottom:0;">
+    <div>
+      <div class="section-eyebrow">Building in public</div>
+      <h2 class="section-title">SaaS <em>Products</em></h2>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    
+    <div class="product-card reveal">
+      <span class="product-badge badge-building">🔨 Building</span>
+      <h3 class="product-name">AuditGuard AI</h3>
+      <p class="product-tagline">// Compliance automation for security audits</p>
+      <p class="product-desc">Scans Google Drive for exposed sensitive data — PII, API keys, passwords. Generates audit-ready reports for SOC2, GDPR, and HIPAA. Built with Next.js, FastAPI, and Supabase.</p>
+      <ul class="product-features">
+        
+        <li>3-pass scanning model for accuracy</li>
+        
+        <li>SOC2 / GDPR / HIPAA report generation</li>
+        
+        <li>Google Drive integration</li>
+        
+        <li>Real-time alerts on exposure</li>
+        
+      </ul>
+      <div class="project-stack">
+        
+        <span class="tag">Next.js</span>
+        
+        <span class="tag">FastAPI</span>
+        
+        <span class="tag">Python</span>
+        
+        <span class="tag">Supabase</span>
+        
+        <span class="tag cyan">Inngest</span>
+        
+      </div>
+    </div>
+    
+    <div class="product-card reveal">
+      <span class="product-badge badge-beta">🌱 Beta</span>
+      <h3 class="product-name">LIFO.AI</h3>
+      <p class="product-tagline">// Food waste reduction for retail stores</p>
+      <p class="product-desc">Intelligent scoring engine that predicts expiry risk per product and automates markdown decisions. Integrates with Square POS for real-time inventory sync.</p>
+      <ul class="product-features">
+        
+        <li>Computer vision pipeline (roadmap)</li>
+        
+        <li>433-line Python scoring engine</li>
+        
+        <li>Square POS integration</li>
+        
+        <li>Auto / Manual batch tracking modes</li>
+        
+      </ul>
+      <div class="project-stack">
+        
+        <span class="tag">Python</span>
+        
+        <span class="tag">FastAPI</span>
+        
+        <span class="tag">Supabase</span>
+        
+        <span class="tag cyan">Square API</span>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Let's work together</div>
+      <h2 class="contact-title">Got a<br/><em>data problem?</em></h2>
+      <p class="contact-sub">Open to freelance data engineering missions, analytics consulting, and interesting collaborations. Always happy to talk data.</p>
+      <div class="contact-links">
+        
+        <a href="https://linkedin.com/in/lakehal-slimane" class="contact-link" target="_blank">
+          <div class="cl-left">
+            <div class="cl-icon">💼</div>
+            <div>
+              <div class="cl-label">LinkedIn</div>
+              <div class="cl-handle">linkedin.com/in/lakehal-slimane</div>
+            </div>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        
+        <a href="https://github.com/slimane-lakehal" class="contact-link" target="_blank">
+          <div class="cl-left">
+            <div class="cl-icon">🐙</div>
+            <div>
+              <div class="cl-label">GitHub</div>
+              <div class="cl-handle">github.com/slimane-lakehal</div>
+            </div>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        
+        <a href="mailto:lakehalslimane@gmail.com" class="contact-link">
+          <div class="cl-left">
+            <div class="cl-icon">✉️</div>
+            <div>
+              <div class="cl-label">Email</div>
+              <div class="cl-handle">lakehalslimane@gmail.com</div>
+            </div>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        
+      </div>
+    </div>
+
+    <div class="contact-visual reveal">
+      <div class="cv-card">
+        <div class="cv-label">Current availability</div>
+        <div class="cv-availability">
+          
+          <div class="avail-dot"></div>
+          <div class="avail-text">Open to new missions</div>
+          
+        </div>
+        <div class="cv-types">
+          
+          <div class="cv-type">Analytics Engineering</div>
+          
+          <div class="cv-type">Data Pipeline Development</div>
+          
+          <div class="cv-type">dbt / BigQuery consulting</div>
+          
+          <div class="cv-type">Data training & workshops</div>
+          
+          <div class="cv-type">Database design</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-copy">© 2025 Slimane. Built with purpose.</div>
+  <div class="footer-stack">
+    Built with <span>HTML + CSS</span> · Deployed on <span>GitHub Pages</span>
+  </div>
+</footer>
+
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
