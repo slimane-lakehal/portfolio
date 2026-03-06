@@ -1,0 +1,14 @@
+<nav>
+  <a href="#hero" class="nav-logo">slimane<span>.dev</span></a>
+  <ul class="nav-links">
+    {% for link in site.data.navigation %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="nav-status">
+    {% if site.author.available %}
+    <div class="status-dot"></div>
+    {{ site.author.availability_text }}
+    {% endif %}
+  </div>
+</nav>

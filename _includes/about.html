@@ -1,0 +1,38 @@
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <div class="section-eyebrow">Who I am</div>
+      <h2 class="section-title" style="margin-bottom:32px">About <em>me</em></h2>
+
+      <p class="about-bio">{{ site.about.intro }}</p>
+      <p class="about-bio">{{ site.about.current }}</p>
+
+      <div class="skills-section">
+        {% for group in site.data.skills %}
+        <div class="skills-group">
+          <div class="skills-label">{{ group.category }}</div>
+          <div class="skills-pills">
+            {% for skill in group.items %}
+            <span class="pill">{{ skill }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="section-eyebrow" style="margin-bottom:32px">Experience</div>
+      <div class="timeline">
+        {% for exp in site.data.experience %}
+        <div class="tl-item">
+          <div class="tl-year">{{ exp.year }}</div>
+          <div class="tl-role">{{ exp.role }}</div>
+          <div class="tl-org">{{ exp.org }}</div>
+          <div class="tl-desc">{{ exp.description }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

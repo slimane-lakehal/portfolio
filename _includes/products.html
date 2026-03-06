@@ -1,0 +1,29 @@
+<section id="products">
+  <div class="section-header reveal" style="max-width:1200px;margin:0 auto;padding:0 48px;margin-bottom:0;">
+    <div>
+      <div class="section-eyebrow">Building in public</div>
+      <h2 class="section-title">SaaS <em>Products</em></h2>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    {% for product in site.data.products %}
+    <div class="product-card reveal">
+      <span class="product-badge badge-{{ product.badge }}">{{ product.badge_icon }} {{ product.badge_text }}</span>
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-tagline">{{ product.tagline }}</p>
+      <p class="product-desc">{{ product.description }}</p>
+      <ul class="product-features">
+        {% for feature in product.features %}
+        <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+      <div class="project-stack">
+        {% for tag in product.tags %}
+        <span class="tag{% if tag.color == 'cyan' %} cyan{% elsif tag.color == 'amber' %} amber{% endif %}">{{ tag.name }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

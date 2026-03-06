@@ -1,0 +1,10 @@
+<div class="stats-bar">
+  <div class="stats-inner">
+    {% for stat in site.data.stats %}
+    <div class="stat-item reveal">
+      <span class="stat-number">{{ stat.number }}</span>
+      <span class="stat-label">{{ stat.label }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>

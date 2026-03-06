@@ -1,0 +1,9 @@
+# Stats bar items
+- number: "3+"
+  label: "Years in data"
+- number: "100+"
+  label: "Students taught"
+- number: "2"
+  label: "SaaS products"
+- number: "∞"
+  label: "Lines of SQL and python written (and counting)"

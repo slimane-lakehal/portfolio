@@ -1,0 +1,42 @@
+# Site settings
+title: "Slimane — Data Analyst & Analytics Engineer"
+description: "Analytics Engineer, Instructor at Le Wagon, SaaS Founder. Building data pipelines, AI products, and teaching data."
+url: "https://slimane-lakehal.github.io/portfolio/"
+baseurl: "" # Leave empty if deploying to username.github.io
+
+# Author / Personal Info
+author:
+  name: "Slimane"
+  tagline: "Analytics Engineer & SaaS Founder"
+  title_highlight: "dbt · BigQuery · Python"
+  title_suffix: "Le Wagon Instructor"
+  bio: "I build data pipelines that actually work, teach analytics engineering at Le Wagon, and ship AI products that solve real problems. Based in France, working globally."
+  location: "France"
+  available: true
+  availability_text: "Available for freelance"
+
+# About section bios
+about:
+  intro: "I'm a <strong>data analyst and analytics engineer</strong> based in France, with a background spanning pharmacy, retail management, and data — which gives me a <span class=\"accent\">uniquely practical</span> lens on business problems."
+  current: "I currently <strong>teach SQL, Python, BigQuery, and Power BI</strong> at Le Wagon, and work as a freelance data consultant. I'm also building two AI-powered SaaS products on the side."
+
+# Contact section
+contact:
+  title: "Got a<br/><em>data problem?</em>"
+  subtitle: "Open to freelance data engineering missions, analytics consulting, and interesting collaborations. Always happy to talk data."
+  availability_types:
+    - "Analytics Engineering"
+    - "Data Pipeline Development"
+    - "dbt / BigQuery consulting"
+    - "Data training & workshops"
+    - "Database design"
+
+# Footer
+footer:
+  copyright: "2025 Slimane. Built with purpose."
+  tech: "HTML + CSS"
+  host: "GitHub Pages"
+
+# Build settings
+markdown: kramdown
+plugins: []

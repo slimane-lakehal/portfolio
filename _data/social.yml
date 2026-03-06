@@ -1,0 +1,15 @@
+# Social/contact links
+- name: "LinkedIn"
+  icon: "💼"
+  url: "https://linkedin.com/in/lakehal-slimane"
+  handle: "linkedin.com/in/lakehal-slimane"
+
+- name: "GitHub"
+  icon: "🐙"
+  url: "https://github.com/slimane-lakehal"
+  handle: "github.com/slimane-lakehal"
+
+- name: "Email"
+  icon: "✉️"
+  url: "mailto:lakehalslimane@gmail.com"
+  handle: "lakehalslimane@gmail.com"

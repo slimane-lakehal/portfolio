@@ -1,0 +1,59 @@
+# Portfolio projects
+# To add a new project, copy a block and modify the values
+
+- name: "dbt Analytics Showcase"
+  number: "01"
+  featured: true
+  description: "Production-grade analytics engineering project on the Olist Brazilian E-Commerce dataset. Full Medallion architecture: staging → intermediate → marts, with 25+ tests and automated CI."
+  url: "https://github.com/slimane-lakehal/dbt-analytics-showcase"
+  tags:
+    - name: "dbt Core"
+      color: "cyan"
+    - name: "DuckDB"
+      color: "cyan"
+    - name: "Python"
+      color: "default"
+    - name: "GitHub Actions"
+      color: "default"
+    - name: "100k+ rows"
+      color: "amber"
+  metrics:
+    - value: "5"
+      label: "dbt models"
+    - value: "25+"
+      label: "Tests"
+    - value: "3"
+      label: "Mart layers"
+    - value: "CI"
+      label: "Auto-tested"
+  link_text: "View on GitHub →"
+
+- name: "Modern Data Pipeline"
+  number: "02"
+  featured: false
+  description: "End-to-end ELT tracking GitHub trending repos. GitHub API → DuckDB → dbt → Evidence.dev dashboard. Orchestrated by Prefect with a daily scheduled run."
+  url: "https://github.com/slimane-lakehal/modern-data-pipeline"
+  tags:
+    - name: "DuckDB"
+      color: "default"
+    - name: "Prefect"
+      color: "cyan"
+    - name: "Evidence.dev"
+      color: "cyan"
+    - name: "dbt"
+      color: "default"
+    - name: "Python"
+      color: "default"
+  link_text: "View on GitHub →"
+
+- name: "Coming Soon"
+  number: "03"
+  featured: false
+  description: "Third portfolio project in progress — stay tuned. Building in public on LinkedIn."
+  url: "https://linkedin.com/in/lakehal-slimane"
+  tags:
+    - name: "In progress"
+      color: "default"
+    - name: "Building in public"
+      color: "amber"
+  link_text: "Follow on LinkedIn →"

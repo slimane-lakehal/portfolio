@@ -1,0 +1,25 @@
+# Experience timeline
+- year: "2024 — Present"
+  role: "Data Instructor"
+  org: "Le Wagon · Bootcamp"
+  description: "Teaching SQL, Python, BigQuery, and Power BI to career-switchers. Delivered workshops on web scraping, dbt, and data pipelines."
+
+- year: "2025 - Present"
+  role: "Solo Founder"
+  org: "LIFO.AI"
+  description: "Building a food waste reduction tool for retail, powered by AI-driven demand forecasting and inventory optimization."
+
+- year: "2026"
+  role: "Solo Founder"
+  org: "AuditGuard AI · LIFO.AI"
+  description: "Building a compliance automation platform for SMBs, starting with GDPR audit automation."
+
+- year: "2024 — Present"
+  role: "Freelance Data Analyst"
+  org: "Auto-entrepreneur"
+  description: "Freelance analytics and data engineering consulting. End-to-end pipelines, dashboards, and data strategy."
+
+- year: "Before data"
+  role: "Fast Food Manager & Pharmacist"
+  org: "Multi-year experience"
+  description: "Background in pharmacy (Algeria) and multi-year fast food management — gives me an unusually strong business intuition."

@@ -1,0 +1,22 @@
+# Skills grouped by category
+- category: "Analytics & Transform"
+  items:
+    - "dbt Core"
+    - "BigQuery"
+    - "DuckDB"
+    - "SQL"
+    - "Power BI"
+
+- category: "Engineering & Infra"
+  items:
+    - "Python"
+    - "FastAPI"
+    - "Prefect"
+    - "Docker"
+    - "PostgreSQL"
+
+- category: "Web & Viz"
+  items:
+    - "Next.js"
+    - "Evidence.dev"
+    - "Streamlit"

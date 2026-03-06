@@ -1,0 +1,44 @@
+<div id="hero">
+  <div class="hero-left">
+    <div class="hero-tag">{{ site.author.tagline }}</div>
+    <h1 class="hero-name">Sli<em>mane</em></h1>
+    <p class="hero-title">
+      <span class="highlight">{{ site.author.title_highlight }}</span>
+      &nbsp;/&nbsp; {{ site.author.title_suffix }}
+    </p>
+    <p class="hero-desc">{{ site.author.bio }}</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="terminal-card">
+      <div class="terminal-bar">
+        <div class="t-dot t-red"></div>
+        <div class="t-dot t-amber"></div>
+        <div class="t-dot t-green"></div>
+        <span class="terminal-title">~/portfolio — zsh</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">❯ </span><span class="t-cmd">cat profile.json</span></div>
+        <div class="t-out">{</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-val">"{{ site.author.name }}"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"Analytics Engineer"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"stack"</span>: [<span class="t-val">"dbt"</span>, <span class="t-val">"BigQuery"</span>, <span class="t-val">"Python"</span>],</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"instructor"</span>: <span class="t-val">"Le Wagon"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"products"</span>: [<span class="t-val">"AuditGuard AI"</span>, <span class="t-val">"LIFO.AI"</span>],</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-val">"{{ site.author.location }} 🇫🇷"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"available"</span>: <span style="color:#22c55e">{{ site.author.available }}</span></div>
+        <div class="t-out">}</div>
+        <br/>
+        <div><span class="t-prompt">❯ </span><span class="t-cmd">dbt run --select marts.*</span></div>
+        <div class="t-out t-comment">Running 4 models...</div>
+        <div class="t-out" style="color:#22c55e">✓ Completed successfully in 1.2s</div>
+        <br/>
+        <div><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</div>

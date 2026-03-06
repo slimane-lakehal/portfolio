@@ -1,0 +1,42 @@
+<section id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Let's work together</div>
+      <h2 class="contact-title">{{ site.contact.title }}</h2>
+      <p class="contact-sub">{{ site.contact.subtitle }}</p>
+      <div class="contact-links">
+        {% for link in site.data.social %}
+        <a href="{{ link.url }}" class="contact-link"{% if link.url contains 'http' %} target="_blank"{% endif %}>
+          <div class="cl-left">
+            <div class="cl-icon">{{ link.icon }}</div>
+            <div>
+              <div class="cl-label">{{ link.name }}</div>
+              <div class="cl-handle">{{ link.handle }}</div>
+            </div>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="contact-visual reveal">
+      <div class="cv-card">
+        <div class="cv-label">Current availability</div>
+        <div class="cv-availability">
+          {% if site.author.available %}
+          <div class="avail-dot"></div>
+          <div class="avail-text">Open to new missions</div>
+          {% else %}
+          <div class="avail-text">Currently unavailable</div>
+          {% endif %}
+        </div>
+        <div class="cv-types">
+          {% for type in site.contact.availability_types %}
+          <div class="cv-type">{{ type }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

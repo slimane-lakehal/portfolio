@@ -1,0 +1,9 @@
+# Navigation links
+- name: "Projects"
+  url: "#projects"
+- name: "About"
+  url: "#about"
+- name: "Products"
+  url: "#products"
+- name: "Contact"
+  url: "#contact"

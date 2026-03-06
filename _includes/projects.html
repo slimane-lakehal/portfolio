@@ -1,0 +1,41 @@
+<section id="projects">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Selected work</div>
+      <h2 class="section-title">Portfolio <em>Projects</em></h2>
+    </div>
+    <div class="section-count">{{ site.data.projects | size | prepend: "0" }}</div>
+  </div>
+
+  <div class="projects-grid">
+    {% for project in site.data.projects %}
+    <a href="{{ project.url }}" class="project-card{% if project.featured %} featured{% endif %} reveal" target="_blank">
+      {% if project.featured %}
+      <div class="featured-grid">
+        <div>
+      {% endif %}
+          <div class="project-num">{{ project.number }}{% if project.featured %} — Featured{% endif %}</div>
+          <h3 class="project-name">{{ project.name }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+          <div class="project-stack">
+            {% for tag in project.tags %}
+            <span class="tag{% if tag.color == 'cyan' %} cyan{% elsif tag.color == 'amber' %} amber{% endif %}">{{ tag.name }}</span>
+            {% endfor %}
+          </div>
+          <span class="project-link">{{ project.link_text }}</span>
+      {% if project.featured %}
+        </div>
+        <div class="featured-metrics">
+          {% for metric in project.metrics %}
+          <div class="metric-box">
+            <span class="metric-val">{{ metric.value }}</span>
+            <span class="metric-label">{{ metric.label }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
