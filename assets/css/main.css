@@ -396,6 +396,7 @@ section { position: relative; z-index: 1; }
   background: var(--black);
   padding: 48px;
   position: relative;
+  cursor: default;
   overflow: hidden;
   transition: background 0.3s;
   text-decoration: none;
@@ -463,6 +464,13 @@ section { position: relative; z-index: 1; }
 .tag.cyan { border-color: rgba(0,212,200,0.3); color: var(--cyan); }
 .tag.amber { border-color: rgba(240,165,0,0.3); color: var(--amber); }
 
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .project-link {
   font-family: var(--mono);
   font-size: 12px;
@@ -477,6 +485,10 @@ section { position: relative; z-index: 1; }
 }
 .project-link:hover { color: var(--cyan); gap: 14px; }
 .project-card.featured .project-link:hover { color: var(--amber); }
+.project-link--live { color: rgba(0,212,200,0.5); }
+.project-link--live:hover { color: var(--cyan); gap: 14px; }
+.project-card.featured .project-link--live { color: rgba(240,165,0,0.5); }
+.project-card.featured .project-link--live:hover { color: var(--amber); }
 
 /* Featured card extras */
 .featured-grid {

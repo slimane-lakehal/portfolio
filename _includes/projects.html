@@ -9,7 +9,7 @@
 
   <div class="projects-grid">
     {% for project in site.data.projects %}
-    <a href="{{ project.url }}" class="project-card{% if project.featured %} featured{% endif %} reveal" target="_blank">
+    <div class="project-card{% if project.featured %} featured{% endif %} reveal">
       {% if project.featured %}
       <div class="featured-grid">
         <div>
@@ -22,7 +22,12 @@
             <span class="tag{% if tag.color == 'cyan' %} cyan{% elsif tag.color == 'amber' %} amber{% endif %}">{{ tag.name }}</span>
             {% endfor %}
           </div>
-          <span class="project-link">{{ project.link_text }}</span>
+          <div class="project-links">
+            <a href="{{ project.url }}" class="project-link" target="_blank">{{ project.link_text }}</a>
+            {% if project.live_url %}
+            <a href="{{ project.live_url }}" class="project-link project-link--live" target="_blank">{{ project.live_link_text }}</a>
+            {% endif %}
+          </div>
       {% if project.featured %}
         </div>
         <div class="featured-metrics">
@@ -35,7 +40,7 @@
         </div>
       </div>
       {% endif %}
-    </a>
+    </div>
     {% endfor %}
   </div>
 </section>
